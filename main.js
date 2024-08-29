@@ -4,7 +4,9 @@ const path = require('path');
 function createWindow() {
   const mainWindow = new BrowserWindow({
     width: 800,
-    height: 600,
+    height: 480,
+    frame:false,
+    resizable:false,
     webPreferences: {
       contextIsolation: true,
       enableRemoteModule: false,
